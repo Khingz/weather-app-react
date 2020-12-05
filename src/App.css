@@ -1,3 +1,169 @@
 body {
-    color: red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('../src/assets/img/bg.jpg') no-repeat center;
+}
+
+.Vertical {
+    border-left: .05rem solid rgb(83, 82, 82);
+    height: 3rem;
+}
+
+.App {
+    background: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    width: 100vw;
+}
+
+.Header {
+    color: white;
+    padding: .5rem;
+    
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+}
+
+form .search-input {
+    background: none;
+    border: solid rgb(223, 86, 7) .05rem;
+    padding: .5rem;
+    color: whitesmoke;
+}
+
+form .search-btn {
+    background:  rgb(224, 86, 7);
+    color: white;
+    border: none;
+    padding: .6rem;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+form .search-btn:hover {
+    background:  rgb(202, 76, 3);
+}
+
+.Weather {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.Weather .date {
+    color: rgb(4, 42, 100);
+    margin-bottom: 3%;
+}
+
+.Weather .location {
+    color: whitesmoke;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: -4%;
+}
+
+.margin {
+    margin-left: 5%;
+}
+
+.weather-desc {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.Weather .weather-data {
+    background: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5rem;
+    color: whitesmoke;
+}
+
+.temp-container {
+}
+
+.temp {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.temp-desc {
+    font-size: .9rem;
+}
+
+.desc-icon {
+    font-size: 1rem;
+}
+
+.desc-name {
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+
+
+.element-data {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+
+/* Smaller Screen */
+@media only screen and (max-width: 800px) {
+    .App {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+/* 
+    .Weather .location {
+        margin-top: -10%;
+    } */
+
+    .Weather .date {
+        margin-bottom: 1% !important;
+    }
+
+    .Weather .weather-data {
+        width: 100%;
+        padding: 1rem 0 ;
+    }
+
+    .margin {
+        margin-left: 2%;
+    }
+
+    .temp {
+        font-size: 1.5rem;
+    }
+
+    .temp-desc {
+        font-size: .5rem;
+    }
+
+    .desc-icon {
+        font-size: .7rem;
+    }
+
+    .desc-name {
+        font-size: .7rem;
+    }
+
+    .element-data {
+        font-size: .9rem;
+        font-weight: bold;
+    }
 }
